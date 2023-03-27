@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Explorer</title>
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 h-screen text-white">
+    <div class="w-[500px] mx-auto p-6 space-y-6">
+      <h1>GitHub Explorer</h1>
+      <div class="space-y-4">
+        <div
+          class="bg-gray-700 rounded-lg py-2 px-4 space-y-4 flex justify-between"
+        >
+          <input
+            id="userName"
+            name="username"
+            placeholder="Enter Github userrname..."
+            class="border-none outline-none bg-gray-700 rounded-md focus:bg-gray-700"
+            type="text"
+          />
+          <button
+            onclick="getUser(document.getElementById('userName').value)"
+            class="bg-blue-700 py-2 px-2 rounded-md"
+          >
+            Search
+          </button>
+        </div>
+        <div id="main" class="m-5"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
